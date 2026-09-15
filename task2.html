@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Div Layout</title>
+    <link rel="stylesheet" href="./task2.css">
+</head>
+
+<body>
+    <div class="introduction">
+        <p class="title-assignment">Web Technologies I / Assignment 1 / Task 2</p>
+        <h1 class="name">Page Layout with Floats</h1>
+    </div>
+
+    <div class="nav">
+        <ul class="nav-links">
+            <li class="nav-item"><a href="./index.html">Task 1</a></li>
+            <li class="nav-item"><a class="active" href="./task2.html">Task 2</a></li>
+            <li class="nav-item"><a href="./exercise1/index.html">Task 3</a></li>
+            <li class="nav-item"><a href="./task4.html">Task 4</a></li>
+            <li class="nav-item"><a href="./task5.html">Task 5</a></li>
+        </ul>
+    </div>
+
+    <div class="page">
+        <div class="sidebar">
+            <h2>Topics</h2>
+            <ul class="menu">
+                <li><a href="#boxmodel">The box model</a></li>
+                <li><a href="#floats">Floats and clearing</a></li>
+                <li><a href="#position">Positioning</a></li>
+                <li><a href="#shadow">Borders and shadows</a></li>
+            </ul>
+            <p class="note">No Flexbox and no Grid are used on this page.</p>
+        </div>
+
+        <div class="content">
+            <h2 id="boxmodel">Laying out a page without Flexbox</h2>
+            <p>Before Flexbox existed, a two column page was built by floating one block to the left
+                and the other to the right, then clearing the float so the footer would not slide up
+                underneath them. The parent div here has a fixed order in the markup, and the floats
+                decide which side each column ends up on.</p>
+
+            <h3 id="floats">Why clearing matters</h3>
+            <p>A floated element is taken out of the normal flow, so its parent collapses to zero
+                height if every child is floated. The fix is a block after the columns that clears both
+                sides, which is what the empty clear div at the end of this section does.</p>
+
+            <h3 id="position">Positioning</h3>
+            <p>The small badge in the corner of this box uses <code>position: absolute</code> against a
+                parent with <code>position: relative</code>, which is the other half of pre-Flexbox
+                layout work.</p>
+
+            <h3 id="shadow">Visual separation</h3>
+            <p>Each section gets its own background colour, padding, border and box shadow so the
+                boundaries are readable without any layout framework. The header, navigation bar and
+                footer are styled to match the other task pages, only the rules behind them avoid
+                Flexbox.</p>
+
+            <span class="badge">Task 2</span>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Baubek Serikbay / SE-2527. Web Technologies I, Assignment 1.</p>
+    </div>
+</body>
+
+</html>

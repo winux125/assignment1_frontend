@@ -1,0 +1,209 @@
+/* Task 2 - floats only, so the shared styles are copied here instead of linked. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f4fb;
+    color: #1d2230;
+    font-family: "Segoe UI", Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+code {
+    background-color: #e3e8f7;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+/* header, same style as the other pages */
+.introduction {
+    background-color: #011AAA;
+    padding: 20px;
+}
+
+.title-assignment {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.name {
+    text-align: center;
+    font-size: 38px;
+    color: white;
+}
+
+/* navigation bar, centred with inline-block instead of flex */
+.nav {
+    background-color: #014BAA;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 4px 20px;
+}
+
+.nav-links a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+.nav-links a:hover {
+    background-color: #011AAA;
+    border-color: #8fb0ff;
+}
+
+.nav-links a.active {
+    background-color: #011AAA;
+    border-color: white;
+}
+
+/* two column area */
+.page {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 16px;
+}
+
+.sidebar {
+    float: left;
+    width: 30%;
+    background-color: #dfe6fa;
+    padding: 18px;
+    border: 1px solid #b9c6ee;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(1, 26, 170, 0.08);
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    color: #011AAA;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #011AAA;
+    padding-bottom: 6px;
+}
+
+.menu {
+    list-style-type: none;
+    margin-bottom: 14px;
+}
+
+.menu li {
+    border-bottom: 1px dashed #a9b8e6;
+}
+
+.menu a {
+    display: block;
+    padding: 8px 4px;
+    color: #013;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #011AAA;
+    color: white;
+    padding-left: 12px;
+}
+
+.note {
+    font-size: 13px;
+    color: #4b5876;
+    font-style: italic;
+}
+
+.content {
+    float: right;
+    width: 67%;
+    position: relative;
+    background-color: white;
+    padding: 22px;
+    border: 1px solid #d4dbf0;
+    border-left: 5px solid #014BAA;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(1, 26, 170, 0.08);
+}
+
+.content h2 {
+    font-size: 26px;
+    color: #011AAA;
+    margin-bottom: 12px;
+}
+
+.content h3 {
+    font-size: 19px;
+    color: #014BAA;
+    margin: 16px 0 6px;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #011AAA;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 0 8px 0 8px;
+}
+
+/* clears the two floated columns so the footer stays below them */
+.clear {
+    clear: both;
+}
+
+/* footer */
+.footer {
+    background-color: #011AAA;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+/* narrow screens stack the columns instead of floating them */
+@media (max-width: 720px) {
+
+    .sidebar,
+    .content {
+        float: none;
+        width: 100%;
+    }
+
+    .sidebar {
+        margin-bottom: 16px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .title-assignment {
+        font-size: 20px;
+    }
+}
