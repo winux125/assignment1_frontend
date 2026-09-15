@@ -1,0 +1,140 @@
+/* Task 3 - tribute page, adds Playfair Display for headings and Source Sans 3 for text. */
+
+body {
+    background: linear-gradient(180deg, #f2f4fb 0%, #dbe2f6 100%);
+    background-attachment: fixed;
+    font-family: "Source Sans 3", "Segoe UI", sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.tagline {
+    text-align: center;
+    font-weight: 400;
+    font-size: 17px;
+    color: #4b5876;
+    margin-bottom: 22px;
+}
+
+/* content container */
+.content {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 30px 22px 50px;
+}
+
+.content h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 30px;
+    color: #011AAA;
+    margin: 30px 0 10px;
+    border-bottom: 2px solid #b9c6ee;
+    padding-bottom: 6px;
+}
+
+.content p {
+    margin-bottom: 12px;
+}
+
+/* portrait */
+.portrait {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.portrait img {
+    max-width: 280px;
+    width: 100%;
+    border: 6px solid white;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(1, 26, 170, 0.25);
+}
+
+.portrait figcaption {
+    font-size: 14px;
+    color: #566078;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* lists */
+.timeline {
+    list-style-type: none;
+    counter-reset: step;
+}
+
+.timeline li {
+    counter-increment: step;
+    position: relative;
+    padding: 8px 0 8px 46px;
+    border-bottom: 1px dashed #b9c6ee;
+}
+
+.timeline li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #011AAA;
+    color: white;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.contributions {
+    list-style-type: square;
+    padding-left: 28px;
+}
+
+.reading {
+    list-style-type: circle;
+    padding-left: 28px;
+}
+
+.contributions li,
+.reading li {
+    margin-bottom: 7px;
+}
+
+/* links and the learn more button */
+.content a {
+    color: #014BAA;
+    text-decoration: underline;
+}
+
+.content a:hover {
+    color: #011AAA;
+    background-color: #dfe6fa;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* needs to be as specific as .content a above, or the link colour wins */
+.content a.btn {
+    display: inline-block;
+    background-color: #011AAA;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 13px 28px;
+    border: 2px solid #011AAA;
+    border-radius: 30px;
+}
+
+.content a.btn:hover {
+    background-color: white;
+    color: #011AAA;
+}
+
+@media (max-width: 600px) {
+    .content h2 {
+        font-size: 25px;
+    }
+}
