@@ -1,0 +1,152 @@
+/* Task 5 - midterm proposal and wireframes, the shared look is in base.css. */
+
+.page h3 {
+    font-size: 19px;
+    color: #014BAA;
+    margin: 24px 0 8px;
+}
+
+.meta {
+    font-size: 14px;
+    color: #566078;
+    margin-bottom: 0;
+}
+
+.download {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.download a {
+    display: inline-block;
+    padding: 4px 10px;
+    border: 1px solid #b9c6ee;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* sitemap */
+.sitemap {
+    list-style-type: none;
+    margin-bottom: 12px;
+}
+
+.sitemap > li {
+    font-weight: bold;
+    color: #011AAA;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.sitemap ul {
+    list-style-type: none;
+    margin-top: 6px;
+    margin-left: 10px;
+    padding-left: 18px;
+    border-left: 2px solid #b9c6ee;
+}
+
+.sitemap ul li {
+    position: relative;
+    padding: 5px 0 5px 4px;
+    font-weight: normal;
+    color: #1d2230;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+/* the short horizontal tick joining each page to the vertical trunk */
+.sitemap ul li::before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    width: 14px;
+    border-top: 2px solid #b9c6ee;
+}
+
+/* wireframes, layout only so everything stays grey */
+.frame {
+    background-color: #eef1f9;
+    border: 2px solid #9fb0e0;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.box {
+    background-color: white;
+    border: 2px dashed #9fb0e0;
+    border-radius: 6px;
+    padding: 16px 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #4b5876;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.box:last-child {
+    margin-bottom: 0;
+}
+
+/* header and footer bands, solid so the repeated parts are obvious */
+.band {
+    background-color: #dfe6fa;
+    border-style: solid;
+    color: #011AAA;
+    font-weight: bold;
+}
+
+/* taller blocks such as a hero, a form or a map */
+.tall {
+    padding: 42px 12px;
+}
+
+/* two column rows inside a wireframe */
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.row .box {
+    margin-bottom: 0;
+}
+
+.col-left {
+    width: 38%;
+    padding: 34px 12px;
+}
+
+.col-right {
+    width: 62%;
+    padding: 34px 12px;
+}
+
+/* shared elements list */
+.shared {
+    list-style-type: square;
+    padding-left: 26px;
+}
+
+.shared li {
+    margin-bottom: 6px;
+}
+
+@media (max-width: 600px) {
+    .row {
+        display: block;
+    }
+
+    .col-left,
+    .col-right {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 22px 12px;
+    }
+
+    .row .box:last-child {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5 - Midterm Project and Wireframes</title>
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./task5.css">
+</head>
+
+<body>
+    <div class="introduction">
+        <p class="title-assignment">Web Technologies I / Assignment 1 / Task 5</p>
+        <h1 class="name">Midterm Project: Mousse Patisserie</h1>
+    </div>
+
+    <div class="nav">
+        <ul class="nav-links">
+            <li class="nav-item"><a href="./index.html">Task 1</a></li>
+            <li class="nav-item"><a href="./task2.html">Task 2</a></li>
+            <li class="nav-item"><a href="./exercise1/index.html">Task 3</a></li>
+            <li class="nav-item"><a href="./task4.html">Task 4</a></li>
+            <li class="nav-item"><a class="active" href="./task5.html">Task 5</a></li>
+        </ul>
+    </div>
+
+    <main class="page">
+        <section class="card">
+            <h2>Project description</h2>
+            <p>Our midterm project is a website for Mousse, a small patisserie. The site gives the shop
+                a proper catalogue of its cakes, cupcakes and pastries, and it lets a visitor request a
+                custom cake for a specific date instead of having to phone the counter. The people we
+                are designing for are dessert lovers browsing for something to buy today, and people
+                organising a birthday, a wedding or another celebration who need a cake made to order.
+                The purpose is to move both of those jobs online, so the shop spends less time answering
+                the same questions and the customer can see prices and options before getting in touch.
+                All five pages share one header, navigation bar and footer so the site reads as a single
+                place rather than five separate documents.</p>
+
+            <p class="meta">Group project. Members: Baubek Serikbay, Maussymzhan Makazhan.</p>
+        </section>
+
+        <section class="card">
+            <h2>Sitemap</h2>
+            <p>Five pages, all reachable from the navigation menu on every page, so the structure is one
+                level deep and nothing is buried.</p>
+
+            <ul class="sitemap">
+                <li>Mousse
+                    <ul>
+                        <li>Home</li>
+                        <li>Catalog</li>
+                        <li>Custom cakes</li>
+                        <li>About us</li>
+                        <li>Contact</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p class="meta">The Home hero links to Catalog, and both Home and Catalog link to Custom
+                cakes, but every page is also one click from every other page through the menu.</p>
+        </section>
+
+        <section class="card">
+            <h2>Wireframes</h2>
+            <p>Layout only, no colours and no real images. Each frame shows the same header and footer
+                bands, with the middle changing per page. Every frame is also available as a PNG in the
+                <code>wireframes</code> folder.</p>
+
+            <h3>1. Home</h3>
+            <p class="download"><a href="./wireframes/1-home.png" download>Download wireframe (PNG)</a></p>
+            <div class="frame">
+                <div class="box band">Logo &middot; Home &middot; Catalog &middot; Custom cakes &middot; About us
+                    &middot; Contact</div>
+                <div class="box tall">Hero: dessert photo, short welcome line, Browse catalog button</div>
+                <div class="box">Bestsellers: three previews, each with name and price</div>
+                <div class="box">Custom cakes: one paragraph and a Request a cake button</div>
+                <div class="box band">Footer: address &middot; opening hours &middot; social links &middot;
+                    copyright</div>
+            </div>
+
+            <h3>2. Catalog</h3>
+            <p class="download"><a href="./wireframes/2-catalog.png" download>Download wireframe (PNG)</a></p>
+            <div class="frame">
+                <div class="box band">Logo &middot; Home &middot; Catalog &middot; Custom cakes &middot; About us
+                    &middot; Contact</div>
+                <div class="box">Page title and category filter: Cakes, Cupcakes, Pastries</div>
+                <div class="box">Cakes: photo, name, description, price</div>
+                <div class="box">Cupcakes: photo, name, description, price</div>
+                <div class="box">Pastries: photo, name, description, price</div>
+                <div class="box">Ordering information and a Contact us button</div>
+                <div class="box band">Footer: address &middot; opening hours &middot; social links &middot;
+                    copyright</div>
+            </div>
+
+            <h3>3. Custom cakes</h3>
+            <p class="download"><a href="./wireframes/3-custom-cakes.png" download>Download wireframe (PNG)</a></p>
+            <div class="frame">
+                <div class="box band">Logo &middot; Home &middot; Catalog &middot; Custom cakes &middot; About us
+                    &middot; Contact</div>
+                <div class="box">Page title and a gallery of previous custom cakes</div>
+                <div class="box">Cake options: filling, size, decoration</div>
+                <div class="box tall">Request form: name, contact, event date, cake details, Send request</div>
+                <div class="box">How it works: send the request, confirm the details, collect the cake</div>
+                <div class="box band">Footer: address &middot; opening hours &middot; social links &middot;
+                    copyright</div>
+            </div>
+
+            <h3>4. About us</h3>
+            <p class="download"><a href="./wireframes/4-about.png" download>Download wireframe (PNG)</a></p>
+            <div class="frame">
+                <div class="box band">Logo &middot; Home &middot; Catalog &middot; Custom cakes &middot; About us
+                    &middot; Contact</div>
+                <div class="row">
+                    <div class="box col-left">Photo of the patisserie</div>
+                    <div class="box col-right">Our story and what makes Mousse different</div>
+                </div>
+                <div class="box">The team: photo, name and role for each person</div>
+                <div class="box">Our approach: ingredients, handmade desserts, preparation</div>
+                <div class="box band">Footer: address &middot; opening hours &middot; social links &middot;
+                    copyright</div>
+            </div>
+
+            <h3>5. Contact</h3>
+            <p class="download"><a href="./wireframes/5-contact.png" download>Download wireframe (PNG)</a></p>
+            <div class="frame">
+                <div class="box band">Logo &middot; Home &middot; Catalog &middot; Custom cakes &middot; About us
+                    &middot; Contact</div>
+                <div class="row">
+                    <div class="box col-left">Address, opening hours, phone, social links</div>
+                    <div class="box col-right">Contact form: name, email, message, Send</div>
+                </div>
+                <div class="box tall">Embedded location map</div>
+                <div class="box band">Footer: address &middot; opening hours &middot; social links &middot;
+                    copyright</div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>What every page shares</h2>
+            <ul class="shared">
+                <li><strong>Header</strong> with the Mousse logo on the left and the five menu links on the
+                    right.</li>
+                <li><strong>Main content</strong> that changes per page, inside the same centred container
+                    width.</li>
+                <li><strong>Footer</strong> with the address, opening hours, social links and the copyright
+                    line.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Baubek Serikbay / SE-2527. Web Technologies I, Assignment 1.</p>
+    </footer>
+</body>
+
+</html>
