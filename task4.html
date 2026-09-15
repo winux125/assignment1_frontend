@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 - Table and Form</title>
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./task4.css">
+</head>
+
+<body>
+    <div class="introduction">
+        <p class="title-assignment">Web Technologies I / Assignment 1 / Task 4</p>
+        <h1 class="name">Tables and Forms</h1>
+    </div>
+
+    <div class="nav">
+        <ul class="nav-links">
+            <li class="nav-item"><a href="./index.html">Task 1</a></li>
+            <li class="nav-item"><a href="./task2.html">Task 2</a></li>
+            <li class="nav-item"><a href="./exercise1/index.html">Task 3</a></li>
+            <li class="nav-item"><a class="active" href="./task4.html">Task 4</a></li>
+            <li class="nav-item"><a href="./task5.html">Task 5</a></li>
+        </ul>
+    </div>
+
+    <main class="page">
+        <section class="card">
+            <h2 id="grades-heading">Student Grades, Autumn 2026</h2>
+
+            <div class="table-scroll">
+                <table class="grades">
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                            <th>Letter</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Baubek Serikbay</td>
+                            <td>Web Technologies</td>
+                            <td>91</td>
+                            <td>A-</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Ernur Zhassyuzak</td>
+                            <td>Web Technologies</td>
+                            <td>94</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Discrete Mathematics</td>
+                            <td>88</td>
+                            <td>B+</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td>Mardan Khalilov</td>
+                            <td>Web Technologies</td>
+                            <td>97</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Bekarys Zhassyuzak</td>
+                            <td>Algorithms</td>
+                            <td>76</td>
+                            <td>C+</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Group average</td>
+                            <td colspan="2">89.2</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <p class="caption">The name cell of the student taking two subjects is merged with
+                <code>rowspan</code>, and the footer row is merged with <code>colspan</code>. The
+                highlighted row uses the <code>.highlight-row</code> class.</p>
+        </section>
+
+        <section class="card">
+            <h2>Feedback Form</h2>
+
+            <form id="feedback-form" action="#" method="post">
+                <div class="field">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" placeholder="Ernur Zhassyuzak" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="name@astanait.edu.kz" required>
+                </div>
+
+                <div class="field">
+                    <label for="role">Your role</label>
+                    <select id="role" name="role">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <fieldset class="field radio-group">
+                    <legend>Was this assignment useful?</legend>
+                    <label class="radio-option" for="useful-yes">
+                        <input type="radio" id="useful-yes" name="useful" value="yes" checked> Yes
+                    </label>
+                    <label class="radio-option" for="useful-no">
+                        <input type="radio" id="useful-no" name="useful" value="no"> No
+                    </label>
+                </fieldset>
+
+                <div class="field">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" rows="5"
+                        placeholder="What worked and what did not?"></textarea>
+                </div>
+
+                <button class="submit-btn" type="submit">Send feedback</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Baubek Serikbay / SE-2527. Web Technologies I, Assignment 1.</p>
+    </footer>
+</body>
+
+</html>
