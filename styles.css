@@ -1,0 +1,70 @@
+/* Task 1 - the personal webpage parts, the shared look is in base.css. */
+
+/* profile card - ID selector */
+#profile-card {
+    background-color: #fbfcff;
+    border-left-color: #011AAA;
+    padding-bottom: 48px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-photo {
+    max-width: 180px;
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid #014BAA;
+    margin-bottom: 14px;
+}
+
+.profile-info .group {
+    font-weight: bold;
+    color: #4b5876;
+    letter-spacing: 1px;
+}
+
+/* lists */
+.goals {
+    list-style-type: decimal;
+    padding-left: 26px;
+}
+
+.tools {
+    list-style-type: square;
+    padding-left: 26px;
+}
+
+.links {
+    list-style-type: none;
+}
+
+.goals li,
+.tools li,
+.links li {
+    margin-bottom: 6px;
+}
+
+.links a {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* wider screens put the photo beside the text */
+@media (min-width: 700px) {
+    .profile {
+        text-align: left;
+    }
+
+    .profile-photo {
+        float: left;
+        margin-right: 24px;
+        margin-bottom: 0;
+    }
+
+    .profile-info {
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 - Personal Webpage</title>
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="introduction">
+        <p class="title-assignment">Web Technologies I / Assignment 1 / Task 1</p>
+        <h1 class="name">Hello, I'm Baubek</h1>
+    </div>
+
+    <div class="nav">
+        <ul class="nav-links">
+            <li class="nav-item"><a class="active" href="./index.html">Task 1</a></li>
+            <li class="nav-item"><a href="./task2.html">Task 2</a></li>
+            <li class="nav-item"><a href="./exercise1/index.html">Task 3</a></li>
+            <li class="nav-item"><a href="./task4.html">Task 4</a></li>
+            <li class="nav-item"><a href="./task5.html">Task 5</a></li>
+        </ul>
+    </div>
+
+    <main class="page">
+        <section id="profile-card" class="card profile">
+            <img class="profile-photo" src="./assets/profile.jpg"
+                alt="Photo of Baubek Serikbay standing on a street at night">
+            <div class="profile-info">
+                <h2>Baubek Serikbay</h2>
+                <p class="group">Group: SE-2527</p>
+                <p>Second year software engineering student at Astana IT University. I like building
+                    things for the browser and I am currently learning how HTML and CSS work together.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>About me</h2>
+            <p>I started with HTML because it is the part of the web you can see immediately. Writing a
+                tag and reloading the page is a very short feedback loop, and that makes it easy to learn
+                by experiment instead of only by reading.</p>
+            <p>CSS was the harder half for me. The markup describes what a thing <em>is</em>, while the
+                stylesheet decides how it looks and where it sits. Keeping those two jobs separate is the
+                point of linking an external <code>styles.css</code> instead of writing inline styles.</p>
+            <p>Outside of study I read about typography, play chess badly, and take long walks around
+                Astana when the weather allows it.</p>
+        </section>
+
+        <section class="card">
+            <h2>What I want to learn this semester</h2>
+            <ol class="goals">
+                <li>Write semantic HTML without reaching for a div every time.</li>
+                <li>Understand the box model well enough to debug layout by reading the CSS.</li>
+                <li>Build a responsive page that works on a phone without a framework.</li>
+                <li>Learn CSS positioning, floats, Flexbox and Grid, in that order.</li>
+                <li>Publish every project so it has a real URL.</li>
+            </ol>
+        </section>
+
+        <section class="card">
+            <h2>Tools I use</h2>
+            <ul class="tools">
+                <li>Visual Studio Code with the Live Server extension</li>
+                <li>DevTools for inspecting the box model</li>
+                <li>Git and GitHub for version history</li>
+                <li>GitHub Pages for publishing</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Links</h2>
+            <p>A couple of places worth bookmarking, plus my own profile:</p>
+            <ul class="links">
+                <li><a href="https://github.com/winux125" target="_blank" rel="noopener">My GitHub profile</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener">MDN
+                        CSS reference</a></li>
+                <li><a href="https://astanait.edu.kz/" target="_blank" rel="noopener">Astana IT University</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Baubek Serikbay / SE-2527. Web Technologies I, Assignment 1.</p>
+    </footer>
+</body>
+
+</html>
